@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from "styled-components"
+import Navbar from './Navbar';
 
 function MainContent() {
     return (
         <Container>
+            <Navbar/>
             <SubContainer>
                 <SectionOne>
                     <Columnone1></Columnone1>
@@ -20,6 +22,10 @@ function MainContent() {
 
 const Container = styled.div``;
 const SubContainer = styled.div``;
+
+const TitleText = styled.h3`
+    height: 20%;
+`;
 const SectionOne = styled.div``;
 const SectionTwo = styled.div``;
 const Columnone1 = styled.div``;
