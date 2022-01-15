@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Earnings from './Earnings';
 import Info from './Info';
 import Navbar from './Navbar';
+import Projects from './Projects';
 
 function MainContent() {
     return (
@@ -14,7 +15,10 @@ function MainContent() {
                     <Earnings/>
                     <Info/>
                     </Columnone1>
-                    <ColumnTwo1></ColumnTwo1>
+                    <ColumnTwo1>
+                        <TitleText>Your Projects</TitleText>
+                        <Projects/>
+                    </ColumnTwo1>
                 </SectionOne>
                 <SectionTwo>
                     <ColumnOne2></ColumnOne2>
