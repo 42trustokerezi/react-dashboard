@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import Earnings from './Earnings';
 import Info from './Info';
+import Invoices from './Invoices';
 import Navbar from './Navbar';
 import Projects from './Projects';
 
@@ -21,7 +22,12 @@ function MainContent() {
                     </ColumnTwo1>
                 </SectionOne>
                 <SectionTwo>
-                    <ColumnOne2></ColumnOne2>
+                    <ColumnOne2>
+                        <InvoiceContainer>
+                            <TitleText>Recent Invoices</TitleText>
+                            <Invoices />
+                        </InvoiceContainer>
+                    </ColumnOne2>
                     <ColumnTwo2></ColumnTwo2>
                 </SectionTwo>
             </SubContainer>
@@ -65,6 +71,11 @@ const Columnone1 = styled.div`
     gap: 3rem;
 `;
 const ColumnOne2 = styled.div``;
+
+const InvoiceContainer = styled.div`
+    height: 60%;
+`;
+
 const ColumnTwo1 = styled.div`
     display: flex;
     flex-direction: column;
