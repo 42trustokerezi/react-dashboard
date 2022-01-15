@@ -59,7 +59,7 @@ const EarningsIncrease = styled.h5`
     font-weight: normal;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 0.5rem;
-    border-radius: 3rem;
+    border-radius: 2rem;
 `
 
 export default Earnings
