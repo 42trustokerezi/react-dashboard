@@ -54,6 +54,10 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    @media screen and (min-width: 320px) and (max-width:1080px){
+        width: 100%;
+        height: max-content !important;
+    }
 `;
 
 const ProfileContainer = styled.div`
@@ -116,10 +120,14 @@ const ContactContainer = styled.div`
     margin: auto auto;
     display: flex;
     flex-direction: column;
+    padding: 1rem;
     a{
         color: white;
         text-decoration: none;
+    } 
+    @media screen and (min-width: 320px) and (max-width:1080px){
+        margin-bottom: 2rem;
     }
 `;
 
-export default Sidebar
+export default Sidebar;
